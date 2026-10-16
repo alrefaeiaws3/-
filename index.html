@@ -143,7 +143,7 @@ const auth = firebase.auth(), db = firebase.firestore();
 const $ = id => document.getElementById(id);
 let USERS = [];
 // رابط الموقع الرئيسي (للزر "العودة للموقع"). مثال: 'https://hisbetarab.vercel.app'
-const MAIN_URL = '';
+const MAIN_URL = 'https://hisbetarab.vercel.app';
 $('backLink').href = MAIN_URL || '/';
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -299,4 +299,3 @@ $('btnCsv').onclick = () => {
 </script>
 </body>
 </html>
-
